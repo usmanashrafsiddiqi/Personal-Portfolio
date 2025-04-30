@@ -10,6 +10,11 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    // Close the menu when a link is clicked
+    setIsMenuOpen(false);
+  };
+
   return (
     <motion.nav
       initial={{ y: -100, opacity: 0 }}
@@ -61,7 +66,11 @@ const Navbar = () => {
               transition={{ delay: 0.4 + index * 0.1 }}
               className="cursor-pointer hover:text-yellow-300 py-3 px-4 text-center"
             >
-              <a href={`#${item.toLowerCase()}`} className="block">
+              <a 
+                href={`#${item.toLowerCase()}`} 
+                className="block" 
+                onClick={handleLinkClick} // Close the menu on link click
+              >
                 {item}
               </a>
             </motion.li>
