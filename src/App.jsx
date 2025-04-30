@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
 import Skills from "./components/Skills"
 
-
+import WhatsAppWidget from './components/WhatsAppWidget'; 
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
 <Education/>
 <Contact/>
 <Footer/>
+<WhatsAppWidget />
     </>
   )
 }
