@@ -59,12 +59,12 @@ const Hero = () => {
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="hidden md:flex justify-center"
+          className="flex justify-center md:block"
         >
           <img
             src="/new1.jpg"
             alt="Usman Ashraf Siddiqi"
-            className="w-64 h-64 rounded-full object-cover shadow-xl border-4 border-pink-500"
+            className="w-32 h-32 md:w-64 md:h-64 rounded-full object-cover shadow-xl border-4 border-pink-500"
           />
         </motion.div>
 
